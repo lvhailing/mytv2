@@ -10,7 +10,7 @@
                 <size
                     android:width="@dimen/d_20dp"
                     android:height="@dimen/d_20dp" />
-                <solid android:color="@color/green" />
+                <solid android:color="@color/orange" />
             </shape>
         </rotate>
 

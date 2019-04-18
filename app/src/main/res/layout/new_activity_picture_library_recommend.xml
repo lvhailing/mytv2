@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textColorLight"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/d_110dp"
+    android:paddingTop="@dimen/d_110dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/d_433dp"
+            android:layout_height="@dimen/d_505dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/new_test1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/d_52dp"
+            android:layout_marginRight="@dimen/d_120dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorDeepNew"
+                android:textSize="@dimen/s_50sp"
+                tools:text="正面管教"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_total_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorCourse"
+                    android:textSize="@dimen/s_28sp"
+                    tools:text="107分钟"/>
+
+                <View
+                    android:layout_width="@dimen/d_2dp"
+                    android:layout_height="@dimen/d_24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/d_27dp"
+                    android:background="@color/textColorCourse"/>
+
+                <TextView
+                    android:id="@+id/tv_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d_21dp"
+                    android:textColor="@color/textColorCourse"
+                    android:textSize="@dimen/s_28sp"
+                    tools:text="2018年"/>
+
+                <View
+                    android:layout_width="@dimen/d_2dp"
+                    android:layout_height="@dimen/d_24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/d_27dp"
+                    android:background="@color/textColorCourse"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d_21dp"
+                    android:textColor="@color/textColorCourse"
+                    android:textSize="@dimen/s_28sp"
+                    tools:text="主讲人"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="主讲专家："
+                    android:textColor="@color/textColorCourse"
+                    android:textSize="@dimen/s_28sp"/>
+
+                <TextView
+                    android:id="@+id/tv_expert_speaker_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="汤丽兰"
+                    android:textColor="@color/textColorCourse"
+                    android:textSize="@dimen/s_28sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_16dp"
+                android:orientation="horizontal">
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/d_21dp"-->
+                <!--android:text="简介："-->
+                <!--android:textColor="@color/textColorCourse"-->
+                <!--android:textSize="@dimen/s_28sp"/>-->
+
+                <TextView
+                    android:id="@+id/tv_brief_introduction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorCourse"
+                    android:textSize="@dimen/s_28sp"
+                    tools:text="简介：孩子爱发脾气？经常气的你暴跳如雷？自己也爱发脾气？ 家里经常鸡飞狗跳？90%的家庭问题都是来源于情绪"
+                    />
+
+                <Button
+                    android:id="@+id/btn_more"
+                    android:layout_width="@dimen/d_84dp"
+                    android:layout_height="@dimen/d_40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/d_36dp"
+                    android:background="@drawable/new_shape_more_btn"
+                    android:text="更多"
+                    android:textColor="@color/textColorCourse"
+                    android:textSize="@dimen/s_24sp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_23dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="价格："
+                    android:textColor="@color/textColorCourse"
+                    android:textSize="@dimen/s_34sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="99.9"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/s_70sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d_10dp"
+                    android:text="元"
+                    android:textColor="@color/textColorCourse"
+                    android:textSize="@dimen/s_34sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_18dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/d_192dp"
+                    android:layout_height="@dimen/d_88dp"
+                    android:background="@drawable/new_shape_orange_btn"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/d_34dp"
+                        android:layout_height="@dimen/d_34dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/d_40dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/new_ic_full_screen"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/d_14dp"
+                        android:text="全屏"
+                        android:textColor="@color/textColorLight"
+                        android:textSize="@dimen/s_32sp"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d_30dp"
+                    android:background="@drawable/new_shape_gray_light_btn"
+                    android:paddingBottom="@dimen/d_22dp"
+                    android:paddingLeft="@dimen/d_48dp"
+                    android:paddingRight="@dimen/d_48dp"
+                    android:paddingTop="@dimen/d_22dp"
+                    android:text="￥ 购买"
+                    android:textColor="@color/textColorCourse"
+                    android:textSize="@dimen/s_32sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_90dp"/>
+
+</LinearLayout>
