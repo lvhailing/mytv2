@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f4f70</color>
+    <color name="colorPrimaryDark">#3f4f70</color>
+    <color name="colorAccent">#3f4f70</color>
+
+    <color name="green">#13aca4</color>
+
+    <color name="gray_bg">#2d374a</color>
+    <color name="gray_low">#6F7C94</color>
+    <color name="gray_mid">#99606D89</color>
+    <color name="gray_mid_selected">#bb828da2</color>
+    <color name="gray_deep">#3F4E71</color>
+    <color name="gray_top_left">#677083</color>
+    <color name="gray_top_right">#3f495b</color>
+    <color name="gray_btm_left">#556079</color>
+    <color name="gray_btm_right">#495877</color>
+    <color name="dialog_exit_bg">#cc414141</color>
+    <color name="dialog_exit_btn">#cc4a4b50</color>
+
+    <color name="textColor">#EFEFEF</color>
+    <color name="textColorHint">#DDEFEFEF</color>
+    <color name="textColorHint2">#BBEFEFEF</color>
+    <color name="textColorDeep">#6D4611</color>
+    <color name="textColorOrange">#E3C17B</color>
+    <color name="textColorOrangeDeep">#A5691A</color>
+
+    <color name="bg_line">#32EFEFEF</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    *********************************************************  橙子早教 start ********************************************
+    <color name="bg_color_deep">#A9775D</color>
+    <color name="shape_color_white_light">#fffffefa</color>
+    <color name="dialog_black_transparent">#99000000</color>
+
+
+    <color name="textColorLight">#FFF7E0</color>
+    <color name="textColorDeepNew">#ff6a483c</color>
+    <color name="textColorCourse">#6a483c</color>
+
+    
+    
+    <color name="orange">#FFA42B</color>
+    <color name="btn_orange_light">#FFCE87</color>
+    <color name="btn_more">#E5D0B8</color>
+    <color name="btn_course_first">#FFFFCF8D</color>
+    <color name="btn_gray_light">#FFE6E0D0</color>
+    <color name="shape_first_course">#ffffbe68</color>
+    <color name="shape_second_course">#FFE4CFB7</color>
+
+
+
+
+
+
+
+
+
+
+    *********************************************************  橙子早教  end **************************************************
+</resources>

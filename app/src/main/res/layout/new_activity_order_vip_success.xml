@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg_color_deep">
+
+    <TextView
+        android:id="@+id/tv_order_vip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="恭喜您已订购橙子早教vip业务！"
+        android:textColor="@color/textColorLight"
+        android:textSize="@dimen/s_60sp"/>
+
+    <TextView
+        android:id="@+id/tv_vip_effective_time"
+        android:layout_below="@id/tv_order_vip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_36dp"
+        android:layout_alignLeft="@id/tv_order_vip"
+        tools:text="剩余时间：26天5小时分钟"
+        android:textColor="@color/textColorLight"
+        android:textSize="@dimen/s_46sp"/>
+
+    <Button
+        android:id="@+id/btn_vip_renewals"
+        android:layout_alignBaseline="@id/tv_vip_effective_time"
+        android:layout_toRightOf="@id/tv_vip_effective_time"
+        android:layout_width="@dimen/d_120dp"
+        android:layout_height="@dimen/d_60dp"
+        android:background="@drawable/new_bg_rect_orange_btn"
+        android:text="续费"
+        android:textColor="@color/textColorLight"
+        android:textSize="@dimen/s_34sp"
+        android:layout_marginLeft="@dimen/d_43dp"/>
+
+</RelativeLayout>

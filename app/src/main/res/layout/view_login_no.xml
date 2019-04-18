@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="@dimen/d_700dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/d_200dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_38dp"
+            android:background="@color/transparent"
+            android:focusable="true"
+            android:hint="请绑定手机号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColorHint"
+            android:textCursorDrawable="@drawable/et_cursor"
+            android:textSize="@dimen/s_36sp">
+
+            <requestFocus />
+        </EditText>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/d_27dp"
+            android:background="#32EFEFEF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_verification_code"
+                android:layout_width="@dimen/d_464dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:focusable="true"
+                android:hint="验证码"
+                android:inputType="number"
+                android:maxLength="8"
+                android:paddingLeft="@dimen/d_38dp"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/textColorHint"
+                android:textSize="@dimen/s_36sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="@dimen/d_90dp"
+                android:layout_marginBottom="@dimen/d_8dp"
+                android:layout_marginTop="@dimen/d_8dp"
+                android:background="#32EFEFEF" />
+
+            <TextView
+                android:id="@+id/tv_get_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="@color/textColorHint"
+                android:textSize="@dimen/s_36sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#32EFEFEF" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="@dimen/d_700dp"
+            android:layout_height="@dimen/d_110dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/d_50dp"
+            android:background="@drawable/selector_buy"
+            android:focusable="true"
+            android:text="确认"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/s_36sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/d_90dp"
+        android:layout_marginRight="@dimen/d_120dp"
+        android:layout_marginTop="@dimen/d_18dp"
+        android:text="客服电话：400-111-2956"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/s_34sp" />
+</RelativeLayout>

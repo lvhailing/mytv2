@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false">
+
+    <ImageView
+        android:layout_width="@dimen/d_256dp"
+        android:layout_height="@dimen/d_66dp"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/logo_title" />
+
+    <TextView
+        android:id="@+id/tv_title_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="true"
+        android:text="22:22"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/s_40sp" />
+
+    <View
+        android:id="@+id/v_title_vertical_line"
+        android:layout_width="@dimen/d_2dp"
+        android:layout_height="@dimen/d_38dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/d_34dp"
+        android:layout_toLeftOf="@id/tv_title_time"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_title_buy"
+        android:layout_width="@dimen/d_74dp"
+        android:layout_height="@dimen/d_74dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/d_20dp"
+        android:layout_toLeftOf="@id/v_title_vertical_line"
+        android:background="@drawable/selector_bar"
+        android:focusable="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/d_40dp"
+            android:layout_height="@dimen/d_40dp"
+            android:background="@mipmap/buy_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_title_me"
+        android:layout_width="@dimen/d_74dp"
+        android:layout_height="@dimen/d_74dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/d_20dp"
+        android:layout_toLeftOf="@id/ll_title_buy"
+        android:background="@drawable/selector_bar"
+        android:focusable="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/d_40dp"
+            android:layout_height="@dimen/d_40dp"
+            android:background="@mipmap/me_normal" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/d_1220dp"
+    android:layout_height="@dimen/d_580dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="@dimen/d_720dp"
+        android:layout_height="match_parent"
+        android:background="@color/green">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_56dp"
+            android:layout_marginTop="@dimen/d_50dp"
+            android:text="真的！"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_1"
+            android:layout_marginLeft="@dimen/d_56dp"
+            android:text="要说再见了吗？"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="@dimen/d_546dp"
+            android:layout_height="@dimen/d_328dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/d_18dp"
+            android:background="@mipmap/exit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/d_500dp"
+        android:layout_height="match_parent"
+        android:background="@color/dialog_exit_bg">
+
+        <TextView
+            android:id="@+id/tv_more_time"
+            android:layout_width="@dimen/d_390dp"
+            android:layout_height="@dimen/d_80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d_184dp"
+            android:background="@color/dialog_exit_btn"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="再看一会儿"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/s_36sp" />
+
+        <TextView
+            android:id="@+id/tv_exit"
+            android:layout_width="@dimen/d_390dp"
+            android:layout_height="@dimen/d_80dp"
+            android:layout_below="@id/tv_more_time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d_50dp"
+            android:background="@color/green"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="退出不看了"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s_36sp" />
+    </RelativeLayout>
+</LinearLayout>

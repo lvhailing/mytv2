@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/d_264dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="恭喜您已订购"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/s_60sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_ka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorOrange"
+                android:textSize="@dimen/s_60sp"
+                android:textStyle="bold"
+                tools:text="家长学堂包年业务" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/d_22dp"
+            android:paddingRight="@dimen/d_22dp"
+            android:paddingTop="@dimen/d_22dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余时间："
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/s_34sp" />
+
+            <TextView
+                android:id="@+id/tv_valid_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/s_46sp"
+                android:textStyle="bold"
+                tools:text="26天5小时分钟" />
+
+            <TextView
+                android:id="@+id/tv_buy_again"
+                android:layout_width="@dimen/d_120dp"
+                android:layout_height="@dimen/d_60dp"
+                android:background="@drawable/gradient_yellow"
+                android:focusable="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/d_38dp"
+                android:gravity="center"
+                android:textColor="@color/textColorDeep"
+                android:textSize="@dimen/s_34sp"
+                android:text="续费" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

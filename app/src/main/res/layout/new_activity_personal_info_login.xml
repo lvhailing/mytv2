@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_deep"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/bg_personal_info"
+        android:background="@mipmap/new_bg_personal_center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/d_250dp"
+            android:layout_height="@dimen/d_250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/d_110dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/new_head_photo"/>
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/d_12dp"
+            android:textColor="@color/textColorDeepNew"
+            android:textSize="@dimen/s_46sp"
+            tools:text="136********565"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_240dp"
+            android:layout_marginRight="@dimen/d_240dp"
+            android:layout_marginTop="@dimen/d_90dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/rl_personal_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/d_140dp"
+                    android:layout_height="@dimen/d_140dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/new_personal_info"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/tv_personal_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d_24dp"
+                    android:gravity="center_horizontal"
+                    android:text="个人信息"
+                    android:textColor="@color/textColorDeepNew"
+                    android:textSize="@dimen/s_42sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rl_order_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/d_140dp"
+                    android:layout_height="@dimen/d_140dp"
+                    android:background="@mipmap/new_order_info"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/tv_order_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d_24dp"
+                    android:text="订单信息"
+                    android:textColor="@color/textColorDeepNew"
+                    android:textSize="@dimen/s_42sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rl_watch_history"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/d_140dp"
+                    android:layout_height="@dimen/d_140dp"
+                    android:background="@mipmap/new_watch_history"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/tv_watch_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/d_24dp"
+                    android:text="观看记录"
+                    android:textColor="@color/textColorDeepNew"
+                    android:textSize="@dimen/s_42sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/d_127dp"-->
+        <!--android:background="@color/transparent"/>-->
+
+    </LinearLayout>
+
+</RelativeLayout>

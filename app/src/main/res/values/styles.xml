@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextNormalStyle">
+        <item name="android:textColor">@color/textColorHint</item>
+        <item name="android:textSize">@dimen/s_38sp</item>
+    </style>
+
+    <style name="TextBoldText" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/s_38sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MyDialogStyle" parent="@android:style/Theme.Holo.Light.Dialog">
+        <!-- 窗口背景色 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否有覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--进出动画-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <!-- *********************************************************  橙子早教 start ******************************************** -->
+
+    <style name="bg_personal_info">
+        <item name="android:layout_width">@dimen/d_1324dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/d_60dp</item>
+        <item name="android:layout_marginBottom">@dimen/d_60dp</item>
+        <item name="android:layout_marginLeft">@dimen/d_298dp</item>
+        <item name="android:layout_marginRight">@dimen/d_298dp</item>
+    </style>
+
+
+
+
+    <!-- *********************************************************  橙子早教  end ************************************************** -->
+</resources>

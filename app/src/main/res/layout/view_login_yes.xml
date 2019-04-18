@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="@dimen/d_900dp"
+        android:layout_height="@dimen/d_240dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/d_200dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_1dp"
+            android:background="#32EFEFEF" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_52dp"
+            android:layout_marginTop="@dimen/d_36dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_phone"
+                android:layout_width="@dimen/d_34dp"
+                android:layout_height="@dimen/d_48dp"
+                android:background="@mipmap/ic_login_phone" />
+
+            <TextView
+                android:id="@+id/tv_my_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d_50dp"
+                android:text="我的手机号:12312312312"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/s_36sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_1dp"
+            android:layout_marginTop="@dimen/d_34dp"
+            android:background="#32EFEFEF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_40dp"
+            android:layout_marginTop="@dimen/d_38dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_login_out"
+                android:layout_width="@dimen/d_210dp"
+                android:layout_height="@dimen/d_80dp"
+                android:background="@drawable/selector_buy"
+                android:focusable="true"
+                android:text="退出登录"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/s_36sp" />
+
+            <Button
+                android:id="@+id/btn_check_update"
+                android:layout_width="@dimen/d_210dp"
+                android:layout_height="@dimen/d_80dp"
+                android:layout_marginLeft="@dimen/d_20dp"
+                android:background="@drawable/selector_buy"
+                android:focusable="true"
+                android:text="检测更新"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/s_36sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/d_90dp"
+        android:layout_marginRight="@dimen/d_120dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="已更新到 V3.2.1"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/s_34sp" />
+
+        <TextView
+            android:id="@+id/tv_kefu"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/d_18dp"
+            android:layout_height="wrap_content"
+            android:text="客服电话：400-111-2956"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/s_34sp" />
+    </LinearLayout>
+</RelativeLayout>

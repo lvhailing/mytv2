@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">家长学堂</string>
+
+    <string name="download_progress">%1$.2f / %2$.2fKB （%3$d%%）</string>
+</resources>

@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.jbtm.parentschool"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 111
+        versionName "1.1.1"
+    }
+    buildTypes {
+        debug {
+            buildConfigField("String", "my_key", "${my_key}")
+            buildConfigField("int", "my_environment", "0")
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            buildConfigField("String", "my_key", "${my_key}")
+            buildConfigField("int", "my_environment", "1")
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/mitvpaysdk.jar')
+    implementation files('libs/MiStats_SDK_Client_1_9_11.jar')
+    implementation project(':jcvideolib')
+    implementation project(':ijkvideolib')
+
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    //jiecao video
+    //    implementation 'fm.jiecao:jiecaovideoplayer:4.6.4'
+    //glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //rxjava2
+    compile 'io.reactivex.rxjava2:rxjava:2.1.7'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    //Retrofit2
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    //okhttp3
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    //zxing
+    compile 'com.google.zxing:core:3.3.0'
+    //腾讯bugly
+    compile 'com.tencent.bugly:crashreport:2.1.5'
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jbtm.parentschool">
+
+    <!--设置为电视应用-->
+    <uses-feature
+        android:name="android.hardware.type.television"
+        android:required="true" />
+
+    <!--小米支付-->
+    <uses-permission android:name="com.xiaomi.permission.AUTH_THIRDPAY" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <!-- Leanback required fields -->
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.faketouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <!-- End Leanback required fields -->
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.PersonalInformationActivity" />
+        <activity android:name=".activity.CourseDetailActivity" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.PayActivity" />
+        <activity android:name=".activity.PayActivityXiaoMi" />
+        <activity android:name=".activity.TestActivity" />
+
+        <!--某些机型可能有声音无画面，需要开启硬件加速-->
+        <activity
+            android:name=".activity.VideoJzActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".activity.VideoIjkActivity"
+            android:hardwareAccelerated="true" />
+    </application>
+</manifest>
