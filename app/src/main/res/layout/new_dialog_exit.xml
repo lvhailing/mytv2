@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog_black_transparent">
+
+    <ImageView
+        android:layout_width="@dimen/d_459dp"
+        android:layout_height="@dimen/d_523dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/d_361dp"
+        android:layout_marginTop="@dimen/d_196dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/new_dialog_exit_watch"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/d_205dp"
+        android:layout_marginTop="@dimen/d_56dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_exit_watch"
+            android:layout_width="@dimen/d_240dp"
+            android:layout_height="@dimen/d_100dp"
+            android:background="@drawable/new_shape_orange_btn"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="退出不看了"
+            android:textColor="@color/textColorLight"
+            android:textSize="@dimen/s_42sp"/>
+
+        <TextView
+            android:id="@+id/tv_watch_moment_again"
+            android:layout_width="@dimen/d_240dp"
+            android:layout_height="@dimen/d_100dp"
+            android:layout_marginLeft="@dimen/d_50dp"
+            android:background="@drawable/new_shape_orange_light_btn"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="再看一会"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/s_42sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_deep"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d_120dp"
+        android:layout_marginTop="@dimen/d_90dp"
+        android:textColor="@color/textColorLight"
+        android:textSize="@dimen/s_42sp"
+        tools:text="今天"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_today"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d_120dp"
+        android:layout_marginRight="@dimen/d_120dp"
+        android:layout_marginTop="@dimen/d_27dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d_120dp"
+        android:layout_marginTop="@dimen/d_41dp"
+        android:textColor="@color/textColorLight"
+        android:textSize="@dimen/s_42sp"
+        tools:text="2月21日"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_yesterday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d_120dp"
+        android:layout_marginRight="@dimen/d_120dp"
+        android:layout_marginTop="@dimen/d_27dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
